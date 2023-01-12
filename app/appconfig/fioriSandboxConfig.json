@@ -1,0 +1,47 @@
+{
+  "defaultRenderer": "fiori2",
+  "applications": {
+    "students-manage": {
+      "title": "Manage Students",
+      "description": "Manage student application.",
+      "additionalInformation": "SAPUI5.Component=studentsmgr",
+      "applicationType": "URL",
+      "url": "./studentsmgr"
+    },
+    "class-manage": {
+      "title": "Manage Classes",
+      "description": "Manage classes application.",
+      "additionalInformation": "SAPUI5.Component=classesmgr",
+      "applicationType": "URL",
+      "url": "./classesmgr"
+    },
+    "classesclassroomsmgr-manage": {
+      "title": "Manage Classes Classrooms Assignments",
+      "description": "Manage classes_classroomsmgr application.",
+      "additionalInformation": "SAPUI5.Component=classes_classroomsmgr",
+      "applicationType": "URL",
+      "url": "./classesclassroomsmgr"
+    },
+    "classrooms-manage": {
+      "title": "Manage Classrooms",
+      "description": "Manage classrooms application.",
+      "additionalInformation": "SAPUI5.Component=classroomsmgr",
+      "applicationType": "URL",
+      "url": "./classroomsmgr"
+    },
+    "studentclassscores-manage": {
+      "title": "Manage Scores",
+      "description": "Manage score application.",
+      "additionalInformation": "SAPUI5.Component=studentclassscoresmgr",
+      "applicationType": "URL",
+      "url": "./studentclassscoresmgr"
+    },
+    "teachers-manage": {
+      "title": "Manage Teachers",
+      "description": "Manage teachers application.",
+      "additionalInformation": "SAPUI5.Component=teachersmgr",
+      "applicationType": "URL",
+      "url": "./teachersmgr"
+    }
+  }
+}

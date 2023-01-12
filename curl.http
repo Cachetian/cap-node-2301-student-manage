@@ -1,0 +1,38 @@
+
+# 1
+curl -X GET http://localhost:4004/admin/Students
+curl -X GET http://localhost:4004/admin/Students/1
+curl -X POST -H "Content-Type: application/json" -d '{"ID":1,"name":"Zhang San", "number":"10"}' http://localhost:4004/admin/Students
+curl -X POST -H "Content-Type: application/json" -d '{"ID":2,"name":"Li Si", "number":"11"}' http://localhost:4004/admin/Students
+curl -X POST -H "Content-Type: application/json" -d '{"ID":3,"name":"Wang Wu", "number":"12"}' http://localhost:4004/admin/Students
+curl -X DELETE http://localhost:4004/admin/Students/1
+
+# 2
+curl -X GET http://localhost:4004/admin/Classrooms
+curl -X POST -H "Content-Type: application/json" -d '{"ID":1,"name":"High-3-1"}' http://localhost:4004/admin/Classrooms
+
+# 3
+curl -X PATCH -H "Content-Type: application/json" -d '{"classroom":{"ID": 1}}' http://localhost:4004/admin/Students/1
+curl -X GET http://localhost:4004/admin/Classrooms/1
+curl -X GET http://localhost:4004/admin/Classrooms/1/students
+
+# 4
+curl -H "Content-Type: application/json" -X POST -d '{"ID":1,"name":"Wang Laoshi"}' http://localhost:4004/admin/Teachers
+
+# 5
+curl -X PUT -H "Content-Type: application/json" -d '{"name":"Wang Wu2", "number":"12"}' http://localhost:4004/admin/Students/3
+
+# 6
+curl -X POST -H "Content-Type: application/json" -d '{"ID":1,"name":"English"}' http://localhost:4004/admin/Classes
+curl -X PATCH -H "Content-Type: application/json" -d '{"teacher":{"ID": 1}}' http://localhost:4004/admin/Classes/1
+curl -X POST -H "Content-Type: application/json" -d '{"class":{"ID":1}, "classroom":{"ID":1}}' http://localhost:4004/admin/Classes_Classrooms
+
+
+# 7
+curl -X POST -H "Content-Type: application/json" -d '{"ID":1,"score":"100", "student":{"ID":1}, "class":{"ID":1}}' http://localhost:4004/admin/StudentClassScores
+
+# 8
+curl -X GET http://localhost:4004/admin/Students/1
+curl -X GET http://localhost:4004/admin/Students/1/scores
+curl -X GET http://localhost:4004/admin/Classrooms/1/students
+curl -X GET http://localhost:4004/admin/Classrooms/1/classes
